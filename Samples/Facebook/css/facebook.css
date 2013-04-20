@@ -2,41 +2,75 @@
 	Facebook Sidebar Sample Interactive Animation
 	@WillsB3
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000313}}
 html, body {
-  min-height: 100%; }
+  background-color: #d2d5da;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000320}}
 .viewport {
+  height: 100%;
   min-height: 100%;
   overflow: hidden;
   position: relative;
   width: 320px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000328}}
 .app {
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   width: 320px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000337}}
 .news-feed,
 .sidebar {
   background-repeat: no-repeat;
   width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000338}}
-.news-feed {
-  background-image: url("../img/NewsFeed.png");
-  height: 2660px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000342}}
+.top-bar {
+  background-image: url("../img/TopBar.png");
+  height: 44px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000338}}
-    .news-feed {
-      background-image: url("../img/NewsFeed_2x.png");
-      background-size: 320px 2660px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000342}}
+    .top-bar {
+      background-image: url("../img/TopBar_2x.png");
+      background-size: 320px 44px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000352}}
+.news-feed {
+  padding-top: 44px;
+  position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000357}}
+  .news-feed .content-wrapper {
+    -webkit-overflow-scrolling: touch;
+    height: 504px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000366}}
+  .news-feed .content {
+    background-image: url("../img/NewsFeed.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    height: 2616px;
+    padding-bottom: 44px; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000366}}
+      .news-feed .content {
+        background-image: url("../img/NewsFeed_2x.jpg");
+        background-size: 320px 2616px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000376}}
 .sidebar {
   background-image: url("../img/Sidebar.png");
   height: 1404px;
@@ -44,7 +78,7 @@ html, body {
   position: absolute;
   top: 20px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/facebook\.scss}line{font-family:\0000376}}
     .sidebar {
       background-image: url("../img/Sidebar_2x.png");
       background-size: 320px 1404px; } }

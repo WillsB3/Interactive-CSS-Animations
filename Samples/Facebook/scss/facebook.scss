@@ -8,12 +8,17 @@
 $deviceHeight: 568px;
 $deviceWidth: 320px;
 $statusBarHeight: 20px;
+$topBarHeight: 44px;
 
 html, body {
+	background-color: #d2d5da;
+	height: 100%;
 	min-height: 100%;
+	overflow: hidden;
 }
 
 .viewport {
+	height: 100%;
 	min-height: 100%;
 	overflow: hidden;
 	position: relative;
@@ -21,10 +26,9 @@ html, body {
 }
 
 .app {
-	// -webkit-overflow-scrolling: touch;
+	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	// overflow-y: scroll;
 	position: relative;
 	width: $deviceWidth;
 }
@@ -35,10 +39,38 @@ html, body {
 	width: 100%;
 }
 
+.top-bar {
+	@include retina-image("../img/TopBar", 320px $topBarHeight, png, "../img/TopBar_2x");
+	height: $topBarHeight;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
 .news-feed {
-	$height: 2660px;
-	@include retina-image("../img/NewsFeed", 320px $height, png, "../img/NewsFeed_2x");
-	height: $height;
+	$newsFeedImageHeight: 2616px;
+	padding-top: $topBarHeight;
+	position: relative;
+
+	.content-wrapper {
+		-webkit-overflow-scrolling: touch;
+
+		height: $deviceHeight - $statusBarHeight - $topBarHeight;
+		overflow-y: auto;
+		position: relative;
+		z-index: 9;
+	}
+
+	.content {
+		@include retina-image("../img/NewsFeed", 320px $newsFeedImageHeight, jpg, "../img/NewsFeed_2x");
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		height: $newsFeedImageHeight;
+
+		padding-bottom: 44px;
+	}
 }
 
 .sidebar {
