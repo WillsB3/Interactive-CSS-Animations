@@ -1,0 +1,45 @@
+/*
+	Facebook Sidebar Sample Interactive Animation
+	@WillsB3
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000312}}
+html, body {
+  height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000316}}
+.device {
+  background-image: url("../img/iPhone5.png");
+  background-repeat: no-repeat;
+  height: 1810px;
+  margin: 5% auto 0 auto;
+  position: relative;
+  width: 387px; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000316}}
+    .device {
+      background-image: url("../img/iPhone5_2x.png");
+      background-size: 773px 1810px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000325}}
+.device-viewport {
+  border: none;
+  height: 548px;
+  position: absolute;
+  left: 33px;
+  top: 139px;
+  width: 320px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000334}}
+.status-bar {
+  background-image: url("../img/StatusBar.png");
+  background-repeat: no-repeat;
+  height: 20px;
+  left: 33px;
+  position: absolute;
+  top: 119px;
+  width: 100%; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Wills\/Sites\/Projects\/Personal\/Interactive\%20CSS\%20Animations\/Samples\/Facebook\/scss\/device\.scss}line{font-family:\0000334}}
+    .status-bar {
+      background-image: url("../img/StatusBar_2x.png");
+      background-size: 320px 20px; } }

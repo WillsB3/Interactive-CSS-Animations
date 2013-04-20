@@ -1,0 +1,42 @@
+/*
+	Facebook Sidebar Sample Interactive Animation
+	@WillsB3
+*/
+
+@import 'bourbon/bourbon';
+
+$viewportOffsetX: 33px;
+$viewportOffsetY: 139px;
+$statusBarHeight: 20px;
+
+html, body {
+	height: 100%;
+}
+
+.device {
+	@include retina-image("../img/iPhone5", 773px 1810px, png, "../img/iPhone5_2x");
+	background-repeat: no-repeat;
+	height: 1810px;
+	margin: 5% auto 0 auto;
+	position: relative;
+	width: 387px;
+}
+
+.device-viewport {
+	border: none;
+	height: 568px - $statusBarHeight;
+	position: absolute;
+	left: $viewportOffsetX;
+	top: $viewportOffsetY;
+	width: 320px;
+}
+
+.status-bar {
+	@include retina-image("../img/StatusBar", 320px $statusBarHeight, png, "../img/StatusBar_2x");
+	background-repeat: no-repeat;
+	height: $statusBarHeight;
+	left: $viewportOffsetX;
+	position: absolute;
+	top: $viewportOffsetY - $statusBarHeight;
+	width: 100%;
+}

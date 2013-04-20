@@ -1,0 +1,52 @@
+/*
+	Facebook Sidebar Sample Interactive Animation
+	@WillsB3
+*/
+
+@import 'bourbon/bourbon';
+
+$deviceHeight: 568px;
+$deviceWidth: 320px;
+$statusBarHeight: 20px;
+
+html, body {
+	min-height: 100%;
+}
+
+.viewport {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: $deviceWidth;
+}
+
+.app {
+	// -webkit-overflow-scrolling: touch;
+	margin: 0 auto;
+	overflow: hidden;
+	// overflow-y: scroll;
+	position: relative;
+	width: $deviceWidth;
+}
+
+.news-feed,
+.sidebar {
+	background-repeat: no-repeat;
+	width: 100%;
+}
+
+.news-feed {
+	$height: 2660px;
+	@include retina-image("../img/NewsFeed", 320px $height, png, "../img/NewsFeed_2x");
+	height: $height;
+}
+
+.sidebar {
+	$height: 1404px;
+
+	@include retina-image("../img/Sidebar", 320px $height, png, "../img/Sidebar_2x");
+	height: $height;
+	left: -100%;
+	position: absolute;
+	top: 20px;
+}
