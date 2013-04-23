@@ -39,8 +39,10 @@ html, body {
 }
 
 .screen-content {
+	bottom: 0;
 	left: 0;
 	position: absolute;
+	top: 0;
 	width: 50%;
 }
 
@@ -73,16 +75,15 @@ html, body {
 		background-position: 0 0;
 		background-repeat: no-repeat;
 		height: $newsFeedImageHeight;
-
-		padding-bottom: 44px;
 	}
 }
 
 .sidebar {
-	$height: 1404px;
+	$imageWidth: 259px;
+	$imageHeight: 1404px;
 
-	@include retina-image("../img/Sidebar", 320px $height, png, "../img/Sidebar_2x");
-	height: $height;
+	@include retina-image("../img/Sidebar", $imageWidth $imageHeight, png, "../img/Sidebar_2x");
+	height: $imageHeight;
 	left: -$sidebarWidth;
 	position: absolute;
 	top: 0;

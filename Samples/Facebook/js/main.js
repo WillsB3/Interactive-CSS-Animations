@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 		// Set correct height on the content pane
 		$('.content-wrapper').css({
-			height: $(window).height()
+			height: $viewport.height() - $('.top-bar').height()
 		});
 	}
 
