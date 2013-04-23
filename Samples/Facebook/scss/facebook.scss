@@ -7,6 +7,7 @@
 
 $deviceHeight: 568px;
 $deviceWidth: 320px;
+$sidebarWidth: 259px;
 $statusBarHeight: 20px;
 $topBarHeight: 44px;
 
@@ -20,23 +21,27 @@ html, body {
 .viewport {
 	height: 100%;
 	min-height: 100%;
-	overflow: hidden;
 	position: relative;
 	width: $deviceWidth;
 }
 
 .app {
 	height: 100%;
+	left: 0;
 	margin: 0 auto;
-	overflow: hidden;
 	position: relative;
-	width: $deviceWidth;
+	width: $deviceWidth * 2;
 }
 
 .news-feed,
 .sidebar {
 	background-repeat: no-repeat;
-	width: 100%;
+}
+
+.screen-content {
+	left: 0;
+	position: absolute;
+	width: 50%;
 }
 
 .top-bar {
@@ -78,7 +83,8 @@ html, body {
 
 	@include retina-image("../img/Sidebar", 320px $height, png, "../img/Sidebar_2x");
 	height: $height;
-	left: -100%;
+	left: -$sidebarWidth;
 	position: absolute;
-	top: 20px;
+	top: 0;
+	width: $sidebarWidth;
 }

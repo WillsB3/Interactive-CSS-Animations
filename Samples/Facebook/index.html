@@ -12,14 +12,18 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/nrXN6nKy8Fx.png">
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/facebook.css">
+
+		<script src="js/vendor/modernizr.js"></script>
 	</head>
 	<body>
 		<div class="viewport">
 			<div class="app">
-				<div class="news-feed">
-					<div class="top-bar"></div>
-					<div class="content-wrapper scroll-root">
-						<div class="content"></div>
+				<div class="screen-content">
+					<div class="news-feed">
+						<div class="top-bar"></div>
+						<div class="content-wrapper scroll-root">
+							<div class="content"></div>
+						</div>
 					</div>
 				</div>
 				<div class="sidebar"></div>
@@ -29,7 +33,10 @@
 		<!-- JS -->
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-2.0.0.min.js"><\/script>')</script>
 
+		<script src="js/vendor/rAF.js"></script>
 		<script src="js/vendor/prevent-overscroll.js"></script>
+		<script src="js/vendor/hammer.js"></script>
+		<script src="js/vendor/Tween.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
