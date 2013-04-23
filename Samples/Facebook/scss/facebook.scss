@@ -40,8 +40,9 @@ html, body {
 
 .screen-content {
 	bottom: 0;
+	float: left;
 	left: 0;
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: 50%;
 }
@@ -83,9 +84,11 @@ html, body {
 	$imageHeight: 1404px;
 
 	@include retina-image("../img/Sidebar", $imageWidth $imageHeight, png, "../img/Sidebar_2x");
+	-webkit-overflow-scrolling: touch;
+	
 	height: $imageHeight;
 	left: -$sidebarWidth;
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: $sidebarWidth;
 }
